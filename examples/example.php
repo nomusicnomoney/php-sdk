@@ -19,8 +19,8 @@ require '../src/facebook.php';
 
 // Create our Application instance (replace this with your appId and secret).
 $facebook = new Facebook(array(
-  'appId'  => '117743971608120',
-  'secret' => '943716006e74d9b9283d4d5d8ab93204',
+  'appId'  => '124309107602147',
+  'secret' => '7dffcd10d0bd41d75f28bf553501edef',
 ));
 
 // Get User ID
@@ -50,7 +50,7 @@ if ($user) {
 }
 
 // This call will always work since we are fetching public data.
-$naitik = $facebook->api('/naitik');
+$naitik = $facebook->api('/budiigor');
 
 ?>
 <!doctype html>
@@ -96,7 +96,7 @@ $naitik = $facebook->api('/naitik');
     <?php endif ?>
 
     <h3>Public profile of Naitik</h3>
-    <img src="https://graph.facebook.com/naitik/picture">
-    <?php echo $naitik['name']; ?>
+    <img src="https://graph.facebook.com/budiigor/picture">
+    <?php echo $budiigor['name']; ?>
   </body>
 </html>
